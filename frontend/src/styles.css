@@ -1,0 +1,44 @@
+/* Estilos para o formulário */
+.container {
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  /* Estilos para form de busca */
+  .form-find {
+    text-align: center;
+  }
+
+  /* Estilos para os alertas */
+  .alert {
+    margin-top: 10px;
+  }
+  
+  /* Estilos para a lista de endereços */
+  .list-group-item {
+    margin-top: 3em;
+    padding: 3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Estilos para input */
+  .form-control {
+    margin: 1em;
+  }
+  
+  /* Estilos para o cabeçalho da lista de endereços */
+  .list-group-item h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Estilo para o botão de busca de endereço */
+  .btn-primary {
+    margin-top: 0.1em;
+  }
+  
+  /* Estilos para o rodapé da lista de endereços */
+  .list-group-item small {
+    font-size: 12px;
+  }
+  

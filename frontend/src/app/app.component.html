@@ -1,0 +1,34 @@
+<div class="container">
+    <form  class="form-find" #cepForm="ngForm" (ngSubmit)="buscarEnderecos()">
+      <div class="form-group">
+        <label for="cepInput">Digite o(s) CEP(s) separados por ';' (ponto e vírgula)</label>
+        <input
+          type="text"
+          id="cepInput"
+          name="cepInput"
+          [(ngModel)]="cepInput"
+          class="form-control"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+    <div *ngIf="enderecos.length > 0" class="mt-4">
+      <h3>Endereços encontrados:</h3>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let endereco of enderecos">
+          <strong>CEP:</strong> {{ endereco.cep }} <br />
+          <strong>Logradouro:</strong> {{ endereco.logradouro }} <br />
+          <strong>Complemento:</strong> {{ endereco.complemento }} <br />
+          <strong>Bairro:</strong> {{ endereco.bairro }} <br />
+          <strong>Localidade:</strong> {{ endereco.localidade }} <br />
+          <strong>UF:</strong> {{ endereco.uf }} <br />
+          <strong>IBGE:</strong> {{ endereco.ibge }} <br />
+          <strong>Gia:</strong> {{ endereco.gia }} <br />
+          <strong>DDD:</strong> {{ endereco.ddd }} <br />
+          <strong>Siafi:</strong> {{ endereco.siafi }} <br />
+        </li>
+      </ul>
+    </div>
+  </div>
+  
